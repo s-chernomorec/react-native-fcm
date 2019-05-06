@@ -24,6 +24,8 @@ public class InstanceIdService extends FirebaseMessagingService {
     // [START refresh_token]
     @Override
     public void onNewToken(String refreshedToken) {
+        super.onNewToken(refreshedToken);
+        
         Log.d(TAG, "Refreshed token: " + refreshedToken);
 
         // Broadcast refreshed token
